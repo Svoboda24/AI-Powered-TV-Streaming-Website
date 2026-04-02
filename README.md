@@ -18,3 +18,4 @@ The project was developed with AI assistance to generate code and design compone
 1. Clone the repository
 2. Open `index.html` in a browser
 3. Choose a TV channel to start streaming
+(Some of the channels may not working)
