@@ -13,3 +13,8 @@ The project was developed with AI assistance to generate code and design compone
 - CSS3
 - JavaScript (ES6)
 - AI tools used for coding support
+
+- ## How to run
+1. Clone the repository
+2. Open `index.html` in a browser
+3. Choose a TV channel to start streaming
