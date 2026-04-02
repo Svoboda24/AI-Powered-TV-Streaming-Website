@@ -1,0 +1,16 @@
+[
+  {
+    "channel_id": 1,
+    "title": "Новости",
+    "start": new Date(Date.now() - 3600000).toISOString(), // 1 час назад
+    "end": new Date(Date.now() + 3600000).toISOString() // через 1 час
+    "description": "Главные события дня"
+  },
+  {
+    "channel_id": 1,
+    "title": "Кино: 'Матрица'",
+    "start": new Date(Date.now() - 3600000).toISOString(), // 1 час назад
+    "end": new Date(Date.now() + 3600000).toISOString() // через 1 час
+    "description": "Фантастический боевик"
+  }
+]

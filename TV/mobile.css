@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  #player-container {
+    width: 100%;
+    height: 56.25vw; /* 16:9 соотношение */
+    flex: none;
+  }
+  
+  #channel-list {
+    height: auto;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  
+  #channel-list-items {
+    max-height: 100%; /* Используем наследование от родителя */
+  }
+  
+  .channel {
+    padding: 8px;
+    font-size: 14px;
+    transition: padding 0.2s ease;
+  }
+  
+  #channel-info {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  #channel-info img {
+    height: 30px;
+    width: 30px;
+  }
+  
+  #custom-controls button {
+    padding: 3px 6px;
+    font-size: 14px;
+    margin: 2px;
+  }
+
+  #epg-container {
+    margin-top: 10px;
+  }
+  
+  #epg-program-list {
+    max-height: 30vh; /* Используем относительную единицу */
+    overflow-y: auto;
+  }
+  
+  .epg-item {
+    padding: 8px 12px;
+  }
+}
+
+/* Дополнительные стили для очень маленьких устройств */
+@media (max-width: 480px) {
+  .channel {
+    padding: 6px;
+    font-size: 12px;
+  }
+  
+  #channel-info {
+    font-size: 12px;
+  }
+  
+  #custom-controls button {
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+  
+  .epg-item {
+    padding: 6px 8px;
+  }
+}

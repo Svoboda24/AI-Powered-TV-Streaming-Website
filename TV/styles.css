@@ -1,0 +1,89 @@
+/* ========== Общие стили скроллбара ========== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 6px;
+}
+
+/* Для Firefox */
+#channel-list-items,
+.channel-list-container,
+#epg-program-list {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 transparent;
+}
+
+/* ========== Анимации ========== */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========== Прелоадер ========== */
+.loader {
+  border-color: #d1d5db;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+/* ========== Кастомные контролы плеера ========== */
+#custom-controls {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+#player-container:hover #custom-controls,
+#player-container:focus-within #custom-controls,
+#custom-controls.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ========== Список каналов ========== */
+#channel-list-items,
+.channel-list-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/* Мобильная адаптация списка каналов */
+@media (max-width: 768px) {
+  #channel-list-items,
+  .channel-list-container {
+    max-height: 60vh;
+  }
+}
+
+/* ========== EPG (программа передач) ========== */
+#epg-container {
+  transition: all 0.3s ease;
+}
+
+.epg-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #374151;
+  transition: background-color 0.2s;
+}
+
+.epg-item:hover {
+  background-color: #374151;
+}
+
+.epg-item.current {
+  background-color: #1E40AF;
+}
+
+.epg-time {
+  color: #9CA3AF;
+  font-size: 0.875rem;
+  min-width: 80px;
+}
